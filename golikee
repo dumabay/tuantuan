@@ -33,6 +33,7 @@ echo $logo;
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van."\033[1;31m[\033[1;33mMua Key Nhắn Qua Zalo:\033[1;31m]\033[1;32m zalo.me/atuanprofile\n";
 echo $van."$luc Giá Key 10k Hạn Sử Dụng 1 Tuần$vang $link  \n";
+echo $van."$luc Vô Box Lấy Key Test : https://zalo.me/g/ykntan866$vang $link  \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van."$luc Nhập API Key : $do";
 $pass=trim(fgets(STDIN));
