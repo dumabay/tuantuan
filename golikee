@@ -35,7 +35,7 @@ echo $van."\033[1;31m[\033[1;33mMua Key Nhắn Qua Zalo:\033[1;31m]\033[1;32m za
 echo $van."$luc Giá Key 10k Hạn Sử Dụng 1 Tuần$vang $link  \n";
 echo $van."$luc Vô Box Lấy Key Test : https://zalo.me/g/ykntan866$vang $link  \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-echo $van."$luc Nhập API Key : $do";
+echo $van."$luc Nhập Key : $do";
 $pass=trim(fgets(STDIN));
 
 if($pass == "tuanphan2007"){
@@ -48,10 +48,10 @@ sleep(1);
 echo $vang." Key Phí \n";
 sleep(1);
 }else if ( $check = explode('|',explode($pass,$key_phi)[1])[0]){
-echo $vang." Key Phí  \n";
+echo $vang." Key Đúng Rồi Đó  \n";
 sleep(2);
 
-}else{echo $do." Key Sai\n";
+}else{echo $do." Key Sai Rồi Nha\n";
 
 exit();
 
