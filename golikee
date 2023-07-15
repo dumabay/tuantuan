@@ -131,13 +131,6 @@ if ($home_1["success"]== 200 ){
     		} else {
         		@system('cmd /c start '.$link);
     		}
-    }else if ( $type == "like"){
-		echo $van." NHẬN NHIỆM VỤ THÀNH CÔNG : $type \r";
-		if (strtoupper(substr(PHP_OS, 0, 3)) === 'LIN') {
-    	 	   @system('xdg-open '.$link);
-    		} else {
-        		@system('cmd /c start '.$link);
-    		}
     }else{
     	echo $van." TÌM NHIỆM VỤ : $type LỖI KHÔNG THỂ LÀM NV NÀY ĐƯỢC  \n";
     	$url_3 = "https://sv5.golike.net/api/advertising/publishers/tiktok/skip-jobs";
