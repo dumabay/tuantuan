@@ -88,6 +88,8 @@ echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 echo $van."\033[1;31m[\033[1;33mTHÔNG BÁO\033[1;31m]\033[1;32m Đây Là Tool Free. Key Tool Phải Lấy Lại Mỗi Ngày Nhé\n";
 
+echo $van."$luc Mua Key Vip 20k/1 Tháng Nhắn Qua Zalo $vang   \n";
+
 echo $van."$luc Link Key Hôm Nay Là :$vang $link  \n";
 
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
