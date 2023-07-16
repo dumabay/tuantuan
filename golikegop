@@ -101,8 +101,8 @@ echo "$van \033[1;97mVô Nhóm Xem Cập nhật Mới Nhất Nhé \n";
 echo "$van \033[1;97mhttps://zalo.me/g/ykntan866 \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 
-echo $van." Nhập ".$do."[".$trang."1".$do."]".$luc." TOOL GOLIKE  TIKTOK ".$trang."[".$do." PREE ".$trang."] \n";
-echo $van." Nhập ".$do."[".$trang."2".$do."]".$luc." TOOL GOLIKE INSTAGRAM ".$trang."[".$do." PHÍ ".$trang."] \n";
+echo $van." Nhập ".$do."[".$trang."1".$do."]".$luc." TOOL GOLIKE  TIKTOK ".$trang."[".$do." VIP ".$trang."] \n";
+echo $van." Nhập ".$do."[".$trang."2".$do."]".$luc." TOOL GOLIKE INSTAGRAM ".$trang."[".$do." VIP ".$trang."] \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 
 echo $van." Nhập : ";
