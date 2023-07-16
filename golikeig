@@ -23,7 +23,7 @@ echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 echo "$van \033[1;97mBẢN QUYỀN : \033[1;93m PHAN ANH TUẤN \n";
 echo "$van \033[1;97mZALO: \033[1;32m0868317407 \n";
 echo "$van \033[1;97mMB : 7010000467 \n";
-echo "$van \033[1;97mTOOL : GOLIKE   \n";
+echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM  \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." NHẬP AUTHORIZATION GOLIKE : ";
 $authorization = trim(fgets(STDIN));
@@ -55,7 +55,7 @@ echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 echo "$van \033[1;97mBẢN QUYỀN : \033[1;93m PHAN ANH TUẤN\n";
 echo "$van \033[1;97mMOMO: \033[1;32m0868317407 \n";
 echo "$van \033[1;97mMB : 7010000467 \n";
-echo "$van \033[1;97mTOOL : GOLIKE   \n";
+echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM  \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." TÀI KHOẢN : ".$trang.$username." \n";
 echo $van." SỐ DƯ : ".$trang.$coin." \n";
