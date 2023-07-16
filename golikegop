@@ -75,7 +75,7 @@ if ( $api["shortenedUrl"] ){
 
 	}
 
-$van = $trang."(".$do."◕‿◕".$trang.")".$do."➜".$luc;
+$van = $trang."(".$do."ूाीूू ".$trang.")".$do."➜".$luc;
 
 system('clear');
 
