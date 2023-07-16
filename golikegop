@@ -54,38 +54,86 @@ $d = date("d-m");
 
 
 
+$key = "kimochi".substr(md5($today), 0 , 8);
+
 $key_phi = file_get_contents("https://raw.githubusercontent.com/dumabay/tuantuan/main/key.txt"); 
+
+$url_key = "https://hungtool.xyz/key-tool.php?key=".$key;
+
+
+
+$api = @json_decode(file_get_contents("https://web1s.com/api?token=748b4fbe-8845-43f1-ba63-0f6ea2983292&url=".$url_key),true);
+
+
+if ( $api["shortenedUrl"] ){
+
+	$link = $api["shortenedUrl"] ;
+
+}else{
+
+	$link = $key;
+
+	}
+
 $van = $trang."(".$do."◕‿◕".$trang.")".$do."➜".$luc;
+
 system('clear');
 
 
+
+
 echo $logo;
+
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-echo $van."\033[1;31m[\033[1;33mMua Key Nhắn Qua Zalo:\033[1;31m]\033[1;32m zalo.me/atuanprofile\n";
-echo $van."$luc Giá Key 10k Hạn Sử Dụng 1 Tuần$vang $link  \n";
-echo $van."$luc Box Zalo : https://zalo.me/g/ykntan866$vang $link  \n";
+
+echo $van."\033[1;31m[\033[1;33mTHÔNG BÁO\033[1;31m]\033[1;32m Đây Là Tool Free. Key Tool Phải Lấy Lại Mỗi Ngày Nhé\n";
+
+echo $van."$luc Link Key Hôm Nay Là :$vang $link  \n";
+
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
+
 echo $van."$luc Nhập Key : $do";
+
 $pass=trim(fgets(STDIN));
 
-if($pass == "tuanphan2007"){
+
+
+if($pass == $key){
+
 echo $vang." Key Chính Xác  \n";
+
 sleep(1);
+
 }else if ( $pass == "20072007" ){
+
 echo $vang." Key Admin \n";
+
 sleep(1);
-}else if ( $pass == "20072007" ){
+
+}else if ( $pass == "tuanphan" ){
+
 echo $vang." Key Phí \n";
+
 sleep(1);
+
 }else if ( $check = explode('|',explode($pass,$key_phi)[1])[0]){
+
 echo $vang." Key Đúng Rồi Đó  \n";
+
 sleep(2);
 
-}else{echo $do." Key Sai Rồi Nha\n";
+
+
+}else{echo $do." Key Sai Rồi\n";
+
+
 
 exit();
 
+
+
 }
+
 
 ### vô tool 
 
