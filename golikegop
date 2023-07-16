@@ -62,7 +62,7 @@ $url_key = "https://hungtool.xyz/key-tool.php?key=".$key;
 
 
 
-$api = @json_decode(file_get_contents("https://web1s.com/api?token=748b4fbe-8845-43f1-ba63-0f6ea2983292&url=".$url_key),true);
+$api = @json_decode(file_get_contents("https://web1s.com/api?token=cc6cf809-b6f1-4df3-b27b-768aa1fecab0&url=".$url_key),true);
 
 
 if ( $api["shortenedUrl"] ){
