@@ -151,7 +151,7 @@ echo "$van \033[1;97mhttps://zalo.me/g/ykntan866 \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 
 echo $van." Nhập ".$do."[".$trang."1".$do."]".$luc." TOOL GOLIKE  TIKTOK ".$trang."[".$do." VIP ".$trang."] \n";
-echo $van." Nhập ".$do."[".$trang."2".$do."]".$luc." TOOL GOLIKE INSTAGRAM ".$trang."[".$do." VIP ".$trang."] \n";
+echo $van." Nhập ".$do."[".$trang."2".$do."]".$luc." TOOL GOLIKE INSTAGRAM ".$trang."[".$do." Bảo Trì ".$trang."] \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 
 echo $van." Nhập : ";
@@ -163,7 +163,7 @@ while(true){
  if ( $ch == 1 ){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/golike'));
 }else if ( $ch == 2){
-	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/golikeig'));
+	eval(file_get_contents('https://raw.githubusercontent.com'));
 }else{
 	
 	echo $van." Lựa Chọn Không Hợp Lệ \n";
