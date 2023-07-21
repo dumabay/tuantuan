@@ -52,118 +52,31 @@ $today = date("d-m-y");
 
 $d = date("d-m");
 
-
-
-$key = "kimochi".substr(md5($today), 0 , 8);
-
-$key_phi = file_get_contents("https://raw.githubusercontent.com/dumabay/tuantuan/main/key.txt"); 
-
-$url_key = "https://hungtool.xyz/key-tool.php?key=".$key;
-
-
-
-$api = @json_decode(file_get_contents("https://web1s.com/api?token=cc6cf809-b6f1-4df3-b27b-768aa1fecab0&url=".$url_key),true);
-
-
-if ( $api["shortenedUrl"] ){
-
-	$link = $api["shortenedUrl"] ;
-
-}else{
-
-	$link = $key;
-
-	}
-
-$van = $trang."(".$do."ूाीूू ".$trang.")".$do."➜".$luc;
-
-system('clear');
-
-
-
-
-echo $logo;
-
-echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-
-echo $van."\033[1;31m[\033[1;33mTHÔNG BÁO\033[1;31m]\033[1;32m Đây Là Tool Free. Key Tool Phải Lấy Lại Mỗi Ngày Nhé\n";
-
-echo $van."$luc Mua Key Vip 20k/1 Tháng Nhắn Qua Zalo $vang   \n";
-
-echo $van."$luc Link Key Hôm Nay Là :$vang $link  \n";
-
-echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-
-echo $van."$luc Nhập Key : $do";
-
-$pass=trim(fgets(STDIN));
-
-
-
-if($pass == $key){
-
-echo $vang." Key Chính Xác  \n";
-
-sleep(1);
-
-}else if ( $pass == "20072007" ){
-
-echo $vang." Key Admin \n";
-
-sleep(1);
-
-}else if ( $pass == "tuanphan" ){
-
-echo $vang." Key Phí \n";
-
-sleep(1);
-
-}else if ( $check = explode('|',explode($pass,$key_phi)[1])[0]){
-
-echo $vang." Key Đúng Rồi Đó  \n";
-
-sleep(2);
-
-
-
-}else{echo $do." Key Sai Rồi\n";
-
-
-
-exit();
-
-
-
-}
-
-
-### vô tool 
-
+//vô tool
 system("clear");
 echo $logo;
 $vanv = "".$do."》".$xanh."》".$vang."》".$luc;
-echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-echo "$van \033[1;97mBẢN QUYỀN : \033[1;93m PHAN ANH TUẤN \n";
-echo "$van \033[1;97mMB : 7010000467 \n";
-echo "$van \033[1;97mTOOL : GOLIKE \n";
-echo "$van \033[1;97mVô Nhóm Xem Cập nhật Mới Nhất Nhé \n";
-echo "$van \033[1;97mhttps://zalo.me/g/ykntan866 \n";
-echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
+echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;33mBẢN QUYỀN: \033[1;32m PHAN ANH TUẤN \n";
+echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;33mBox Zalo : \033[1;97m https://zalo.me/g/ykntan866 \n";
+echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;95mMua Key Phí Liên Hệ Admin \n";
+echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 
-echo $van." Nhập ".$do."[".$trang."1".$do."]".$luc." TOOL GOLIKE  TIKTOK ".$trang."[".$do." VIP ".$trang."] \n";
-echo $van." Nhập ".$do."[".$trang."2".$do."]".$luc." TOOL GOLIKE INSTAGRAM ".$trang."[".$do." VIP ".$trang."] \n";
-echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
+echo $van.$luc." Nhập Số ".$do."[".$trang."1".$do."]".$luc." Để Vào Tool Free ".$do."[".$vang."Vượt Link".$do."] \n";
+echo $van.$luc." Nhập Số ".$do."[".$trang."2".$do."]".$luc." Để Vào Tool Phí ".$do."[".$vang."Key Phí".$do."] \n";
 
-echo $van." Nhập : ";
+echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+
+echo $van.$luc." Nhập Số : ";
 
 $ch = trim(fgets(STDIN));
 
 while(true){
 
  if ( $ch == 1 ){
-	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/golike'));
+	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/keyfree'));
 }else if ( $ch == 2){
-	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/golikeig'));
+	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/keyphi'));
 }else{
 	
 	echo $van." Lựa Chọn Không Hợp Lệ \n";
