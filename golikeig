@@ -22,7 +22,9 @@ echo $logo;
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo "$van \033[1;97mBẢN QUYỀN : \033[1;93m PHAN ANH TUẤN \n";
 echo "$van \033[1;97mMB : 7010000467 \n";
-echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM  \n";
+echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM \n";
+echo "$van \033[1;97mVô Nhóm Xem Cập nhật Mới Nhất Nhé \n";
+echo "$van \033[1;97mhttps://zalo.me/g/ykntan866 \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." NHẬP AUTHORIZATION GOLIKE : ";
 $authorization = trim(fgets(STDIN));
@@ -46,14 +48,15 @@ if ($home["success"]== 200 ){
 	echo " ĐĂNG NHẬP THẤT BẠI \n";
 	exit;
 }
-
 $gop_data = [];
 system('clear');
 echo $logo;
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-echo "$van \033[1;97mBẢN QUYỀN : \033[1;93m PHAN ANH TUẤN\n";
+echo "$van \033[1;97mBẢN QUYỀN : \033[1;93m PHAN ANH TUẤN \n";
 echo "$van \033[1;97mMB : 7010000467 \n";
-echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM  \n";
+echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM \n";
+echo "$van \033[1;97mVô Nhóm Xem Cập nhật Mới Nhất Nhé \n";
+echo "$van \033[1;97mhttps://zalo.me/g/ykntan866 \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." TÀI KHOẢN : ".$trang.$username." \n";
 echo $van." SỐ DƯ : ".$trang.$coin." \n";
@@ -100,7 +103,9 @@ echo $logo;
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo "$van \033[1;97mBẢN QUYỀN : \033[1;93m PHAN ANH TUẤN \n";
 echo "$van \033[1;97mMB : 7010000467 \n";
-echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM  \n";
+echo "$van \033[1;97mTOOL : GOLIKE INSTAGRAM \n";
+echo "$van \033[1;97mVô Nhóm Xem Cập nhật Mới Nhất Nhé \n";
+echo "$van \033[1;97mhttps://zalo.me/g/ykntan866 \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." TÀI KHOẢN : ".$trang.$username." \n";
 echo $van." SỐ DƯ : ".$trang.$coin." \n";
@@ -149,20 +154,33 @@ while (true){
 		####tìm job
 		while(true){
 			$list = get_job($authorization,$id_gl);
+			
 			if ($list["status"] == 200 ){
 				$id_nhan = $list["data"]["id"];
 				$object_id = $list["data"]["object_id"];
 				$type = $list["data"]["type"];
 				if ( $type == "follow"){
 					$fl = follow($object_id,$cookie,$csrftoken);
-					if ($fl == 'die'){
+					if ($fl = "ok"){
+						echo $van." FOLLOW SUCCESS \r";
+						sleep(1);
+					}else if($fl == 'die'){
 						echo $van." Tài Khoản Bị Block \n";
 						$tk_so = array_search($haha, $gop_data);
 						unset($data_ig[$tk_so]);
 						break;
+					}else{
+						echo $van." LỖI KHÔNG XÁC ĐỊNH \n";
+						
+						
 					}
 				}else if( $type == "like"){
-					$like = like($object_id,$cookie,$csrftoken);
+					$id_like = $list["data"]["object_data"];
+					$js = json_decode($id_like,true);
+					$id_l = $js["id"];
+					
+					$like = like($id_l,$cookie,$csrftoken);
+					
 					if ($like == 'die'){
 						echo $van." Tài Khoản Bị Block \n";
 						$tk_so = array_search($haha, $gop_data);
@@ -206,18 +224,18 @@ while (true){
 
 function delay($delay) {
     for ($time = $delay; $time > -1; $time--) {
-        echo "\r\033[1;93m   Vui Lòng Chờ\033[1;91m ~>       \033[1;92m TUẤN\033[1;91m |\033[1;93m $time\033[1;91m | ";
+        echo "\r\033[1;93m   Vui Lòng Chờ\033[1;91m ~>       \033[1;92m VĂN\033[1;91m |\033[1;93m $time\033[1;91m | ";
         usleep(150000);
 
-        echo "\r\033[1;91m   Vui Lòng Chờ\033[0;33m   ~>     \033[0;37m TUẤN\033[0;31m |\033[0;33m $time\033[0;31m | ";
+        echo "\r\033[1;91m   Vui Lòng Chờ\033[0;33m   ~>     \033[0;37m TUẤNN\033[0;31m |\033[0;33m $time\033[0;31m | ";
         usleep(150000);
-        echo "\r\033[1;92m   Vui Lòng Chờ\033[0;33m     ~>   \033[0;37m TUẤN\033[0;31m |\033[0;33m $time\033[0;31m | ";
+        echo "\r\033[1;92m   Vui Lòng Chờ\033[0;33m     ~>   \033[0;37m TUẤNNN\033[0;31m |\033[0;33m $time\033[0;31m | ";
         usleep(150000);
-        echo "\r\033[1;94m   Vui Lòng Chờ\033[0;33m       ~> \033[0;37m TUẤN.\033[0;31m |\033[0;33m $time\033[0;31m | ";
+        echo "\r\033[1;94m   Vui Lòng Chờ\033[0;33m       ~> \033[0;37m TUẤNNN.\033[0;31m |\033[0;33m $time\033[0;31m | ";
         usleep(150000);
-        echo "\r\033[1;95m   Vui Lòng Chờ\033[0;33m        ~>\033[0;37m TUẤN.\033[0;31m |\033[0;33m $time\033[0;31m | ";
+        echo "\r\033[1;95m   Vui Lòng Chờ\033[0;33m        ~>\033[0;37m TUẤNNN.\033[0;31m |\033[0;33m $time\033[0;31m | ";
         usleep(150000);
-        echo "\r\033[1;95m   Vui Lòng Chờ\033[0;33m        ~>\033[0;37m TUẤNN..\033[0;31m |\033[0;33m $time\033[0;31m | ";
+        echo "\r\033[1;95m   Vui Lòng Chờ\033[0;33m        ~>\033[0;37m TUẤNNN..\033[0;31m |\033[0;33m $time\033[0;31m | ";
         usleep(150000);
         echo "\r\033[1;95m   Vui Lòng Chờ\033[0;33m        ~>\033[0;37m TUẤNNN...\033[0;31m |\033[0;33m $time\033[0;31m | ";
         usleep(100000);
@@ -243,6 +261,7 @@ function like($id,$cookie,$csrftoken){
 	$text = post_type3($url, $header);
 
 	if ( $text["status"] == "ok" ){
+		echo " LIKE SUCCESS \r";
 		return "ok";
 	}else if ( $text["spam"] ){
 		return "die";
@@ -254,24 +273,25 @@ function like($id,$cookie,$csrftoken){
 }
 
 function follow($id,$cookie,$csrftoken){
-	$url_1 = "https://www.instagram.com/api/v1/friendships/create/".$id."/";
-	$header = array(
+	$url = "https://www.instagram.com/api/v1/friendships/create/".$id."/";
+	$tsm = array (
 	"Host:www.instagram.com",
-	 "user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.57 Mobile Safari/537.36",
-	 "viewport-width:360",
-	 "content-type:application/x-www-form-urlencoded",
+	"user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
+	"viewport-width:360",
+	"content-type:application/x-www-form-urlencoded",
 	"accept:*/*",
 	"x-requested-with:XMLHttpRequest",
-	"x-asbd-id:198387",
+	"x-asbd-id:129477",
 	"x-csrftoken:".$csrftoken,
 	"sec-ch-prefers-color-scheme:light",
 	"x-ig-app-id:1217981644879628",
-	"x-asbd-id:198387",
+	"origin:https://www.instagram.com",
 	"cookie:".$cookie,
-	
 	);
-	$text = post_type3($url_1, $header);
+	$data = "container_module=profile&nav_chain=PolarisProfileRoot%3AprofilePage%3A1%3Avia_cold_start&user_id=".$id;
+	$text = post_type2($url, $tsm, $data);
 	if ( $text["status"] == "ok" ){
+		echo " FOLLOW SUCCESS \r";
 		return "ok";
 	}else if ( $text["spam"] ){
 		return "die";
@@ -280,6 +300,7 @@ function follow($id,$cookie,$csrftoken){
 		return "ko";
 	}
 }
+
 function get_info_ig($cookie){
   #Xu_ly_cookie
   if (!strpos($cookie, 'ds_user_id') || !strpos($cookie, 'csrftoken')){
