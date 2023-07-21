@@ -1,3 +1,4 @@
+<?php
 error_reporting(0);
 session_start();
 date_default_timezone_set("Asia/Ho_Chi_Minh");
@@ -17,8 +18,6 @@ $do="\033[1;91m";
 $Blue="\033[0;34m";
 $van = $trang."(".$do."◕‿◕".$trang.")".$do."➜".$luc;
 system('clear');
-
-echo $logo;
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo "$van \033[1;97mBẢN QUYỀN : \033[1;93m PHAN ANH TUẤN \n";
 echo "$van \033[1;97mMB : 7010000467 \n";
@@ -224,7 +223,7 @@ while (true){
 
 function delay($delay) {
     for ($time = $delay; $time > -1; $time--) {
-        echo "\r\033[1;93m   Vui Lòng Chờ\033[1;91m ~>       \033[1;92m VĂN\033[1;91m |\033[1;93m $time\033[1;91m | ";
+        echo "\r\033[1;93m   Vui Lòng Chờ\033[1;91m ~>       \033[1;92m TUẤN\033[1;91m |\033[1;93m $time\033[1;91m | ";
         usleep(150000);
 
         echo "\r\033[1;91m   Vui Lòng Chờ\033[0;33m   ~>     \033[0;37m TUẤNN\033[0;31m |\033[0;33m $time\033[0;31m | ";
