@@ -125,7 +125,6 @@ echo $trang."━━━━━━━━━━━━━━━━━━━━━━�
 
 echo $van.$luc." Nhập Số ".$do."[".$trang."1".$do."]".$luc." TOOL GOLIKE TIKTOK ".$do."[".$vang."FOLLOW".$do."] \n";
 echo $van.$luc." Nhập Số ".$do."[".$trang."1.2".$do."]".$luc." TOOL GOLIKE TIKTOK ".$do."[".$vang."FOLLOW+TIM".$do."] \n";
-echo $van.$luc." Nhập Số ".$do."[".$trang."1.3".$do."]".$luc." TOOL GOLIKE TIKTOK ".$do."[".$vang."FL+TIM+CMT".$do."] \n";
 echo $van.$luc." Nhập Số ".$do."[".$trang."2".$do."]".$luc." TOOL GOLIKE INSTAGRAM ".$do."[".$vang."VIP".$do."] \n";
 
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
@@ -140,8 +139,6 @@ while(true){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/golike'));
 }else if ( $ch == 1.2){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/golikee'));
-}else if ( $ch == 1.3){
-	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/golikeee'));
 }else if ( $ch == 2){
 	eval(file_get_contents('https://raw.githubusercontent.com/dumabay/tuantuan/main/golikeig'));
 }else{
