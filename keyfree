@@ -54,25 +54,30 @@ $d = date("d-m");
 
 
 
-$key = "kimochi".substr(md5($today), 0 , 8);
+$today = date("d-m-y");
+$key = "kimochi" . substr(md5($today), 0, 8);
 
+$url_key = "https://hungtool.xyz/key-tool.php?key=" . $key;
 
-$url_key = "https://hungtool.xyz/key-tool.php?key=".$key;
-
-
-
-$api = @json_decode(file_get_contents("https://web1s.com/api?token=cc6cf809-b6f1-4df3-b27b-768aa1fecab0&url=".$url_key),true);
-
-
-if ( $api["shortenedUrl"] ){
-
-	$link = $api["shortenedUrl"] ;
-
+$token = "cc6cf809-b6f1-4df3-b27b-768aa1fecab0";
+$api = json_decode(file_get_contents("https://web1s.com/api?token=".$token."&url=".$url_key), true);
+if ($api['status'] == 'success') {
+  $link = $api['shortenedUrl'];
+  $api1 = json_decode(file_get_contents("https://web1s.com/api?token=".$token."&url=".$link), true);
+  if ($api1['status'] == 'success') {
+    $link1 = $api1['shortenedUrl'];
+    $api2 = json_decode(file_get_contents("https://web1s.com/api?token=".$token."&url=".$link1), true);
+    if ($api2['status'] == 'success') {
+      $link3 = $api2['shortenedUrl'];
+      echo $link3;
 }else{
+      $link3 = $key;
+      
 
-	$link = $key;
+	 }
+  }
+}
 
-	}
 
 
 system('clear');
@@ -87,7 +92,7 @@ echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;33mBox Zalo : \033[1;97m ht
 echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;95mMua Key Phí Liên Hệ Admin \n";
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
 echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;32mCách Lấy Key Free: \033[1;97m https://youtu.be/qG_8VPBTfEU \n";
-echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;32mLink Key Free :$hong $link \n";
+echo "$van \033[1;97m~[\033[1;91m+\033[1;97m] \033[1;32mLink Key Free :$hong $link3 \n";
 
 
 echo $trang."━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
@@ -104,13 +109,13 @@ echo $vang." Key Chính Xác  \n";
 
 sleep(1);
 
-}else if ( $pass == "20072007" ){
+}else if ( $pass == "tuan" ){
 
 echo $vang." Key Admin \n";
 
 sleep(1);
 
-}else if ( $pass == "tuanphan" ){
+}else if ( $pass == "tuan" ){
 
 echo $vang." Key Phí \n";
 
