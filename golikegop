@@ -1,3 +1,5 @@
+echo " ĐÃ CẬP NHẬT TOOL MỚI, LINK TẢI : https://www.mediafire.com/file/vo63i5w345bj40s/golike.vn.php/file \n";
+exit();
 error_reporting(0);
 
 session_start();
