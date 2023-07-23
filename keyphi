@@ -82,13 +82,13 @@ if($pass == $key_phi){
 
 sleep(1);
 
-}else if ( $pass == "20072007" ){
+}else if ( $pass == "tuandzvip" ){
 
 echo $vang." Key Admin \n";
 
 sleep(1);
 
-}else if ( $pass == "tuanphan" ){
+}else if ( $pass == "adminvip" ){
 
 echo $vang." Key Phí \n";
 
